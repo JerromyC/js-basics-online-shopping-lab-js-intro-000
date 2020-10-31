@@ -33,6 +33,7 @@ function viewCart() {
 }
 
 function total() {
+  var itemPrice = Math.floor(Math.random()*100)
   total = 0;
   for(var i = 0; i < cart.length; i++) {
     total += cart.length[i].itemPrice;
