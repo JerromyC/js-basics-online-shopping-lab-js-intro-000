@@ -32,24 +32,10 @@ function viewCart() {
   }
 }
 
-// function viewCart() {
-//   if(cart.length === 0) {
-//     return `Your shopping cart is empty.`
-//   } else {
-//     var items = [];
-//     for(var i = 0; i < cart.length; i++) {
-//       for(var item in cart[i]) {
-//         items.push(item + ` at $` + cart[i][item])
-//       }
-//       console.log(`In your cart you have ` + item.join(`, `) + `.`)
-//     }
-//   }
-// }
-
 function total() {
   total = 0;
   for(var i = 0; i < cart.length; i++) {
-    total += cart.length[i].itemPrice;
+    total += cart.length[i];
   }
   return total;
 }
